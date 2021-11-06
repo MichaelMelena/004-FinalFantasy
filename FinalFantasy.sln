@@ -17,6 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search examples", "Search examples", "{C293D481-E8E2-4AF6-8C11-157D8FF6AC10}"
+	ProjectSection(SolutionItems) = preProject
+		Response examples\SearchAchievements.json = Response examples\SearchAchievements.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +48,7 @@ Global
 		{46CD3DE3-CEB9-4769-B774-586D09355A85} = {F5DE3954-4B45-4A6D-9A18-274EB9A0A915}
 		{C3A6F105-E429-4B42-B573-210EB80B72CF} = {F5DE3954-4B45-4A6D-9A18-274EB9A0A915}
 		{D80E3E19-617D-46B0-BF93-3B05E10D7321} = {F5DE3954-4B45-4A6D-9A18-274EB9A0A915}
+		{C293D481-E8E2-4AF6-8C11-157D8FF6AC10} = {F5DE3954-4B45-4A6D-9A18-274EB9A0A915}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E46441E-98C2-4B28-94F5-96849BFE1568}
