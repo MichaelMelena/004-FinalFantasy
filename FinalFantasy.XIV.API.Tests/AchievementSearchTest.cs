@@ -41,7 +41,7 @@ public class AchievementSearchTest
 		};
 
 
-		var response = await Client.SearchAsync<Achievement, object>(request);
+		var response = await Client.SearchAsync<Achievement, object>(request, PrivateKey);
 
 		response.Results.Should().NotBeNull().And.Contain(x => x.AchievementTarget != null);
 	}
