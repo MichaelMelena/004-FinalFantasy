@@ -11,7 +11,7 @@ public static class RefitSettingFactory
 			ContentSerializer = new NewtonsoftJsonContentSerializer(
 			new Newtonsoft.Json.JsonSerializerSettings
 			{
-				Culture = System.Globalization.CultureInfo.InvariantCulture,
+				Culture = System.Globalization.CultureInfo.InvariantCulture
 			})
 		};
 	}
