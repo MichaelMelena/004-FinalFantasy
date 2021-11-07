@@ -103,6 +103,23 @@ public class AchievementSearchTest
 			filter
 		};
 
+		var objectData = new
+		{
+			query = new
+			{
+				@bool = new
+				{
+					filter = new[]
+					{
+						new
+						{
+							match = new { ID = 1 }
+						}
+					}
+				}
+			}
+		};
+
 		var node = new Uri(Host);
 		var connection = new ConnectionSettings(node);
 		var tmpClient = new ElasticClient(connection);
@@ -112,12 +129,13 @@ public class AchievementSearchTest
 		var tmpA = JsonConvert.SerializeObject(json);
 		var tmpB = JsonConvert.SerializeObject(dict);
 		var tmpC = JsonConvert.SerializeObject(data);
+		var tmpD = JsonConvert.SerializeObject(objectData);
 
 		var request = new Models.Search.SearchRequest<object>
 		{
 			Indexes = "achievement",
 			Columns = "*",
-			Body = data
+			Body = (object)objectData
 		};
 
 		var response = await Client.SearchAsync<Achievement, object>(request, PrivateKey);
