@@ -22,6 +22,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search examples", "Search e
 		Response examples\SearchAchievements.json = Response examples\SearchAchievements.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{68D659C8-657E-4F74-85C5-15D3586CF73C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIV.Client", "FFXIV.Client\FFXIV.Client.csproj", "{3BAB2F75-9EAB-4CF1-B052-B3644F648C0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,10 @@ Global
 		{D80E3E19-617D-46B0-BF93-3B05E10D7321}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D80E3E19-617D-46B0-BF93-3B05E10D7321}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D80E3E19-617D-46B0-BF93-3B05E10D7321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAB2F75-9EAB-4CF1-B052-B3644F648C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAB2F75-9EAB-4CF1-B052-B3644F648C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAB2F75-9EAB-4CF1-B052-B3644F648C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAB2F75-9EAB-4CF1-B052-B3644F648C0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +57,7 @@ Global
 		{C3A6F105-E429-4B42-B573-210EB80B72CF} = {F5DE3954-4B45-4A6D-9A18-274EB9A0A915}
 		{D80E3E19-617D-46B0-BF93-3B05E10D7321} = {F5DE3954-4B45-4A6D-9A18-274EB9A0A915}
 		{C293D481-E8E2-4AF6-8C11-157D8FF6AC10} = {F5DE3954-4B45-4A6D-9A18-274EB9A0A915}
+		{3BAB2F75-9EAB-4CF1-B052-B3644F648C0A} = {68D659C8-657E-4F74-85C5-15D3586CF73C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E46441E-98C2-4B28-94F5-96849BFE1568}
