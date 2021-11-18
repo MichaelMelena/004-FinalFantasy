@@ -8,12 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
     <PackageReference Include="coverlet.collector" Version="3.1.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.38" />
+    <PackageReference Include="Refit" Version="6.1.15" />
   </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference  Include="../FFXIV.Services.csproj"/>
-  </ItemGroup
+    <ProjectReference Include="..\FFXIV.Services\FFXIV.Services.csproj" />
+  </ItemGroup>
 </Project>
