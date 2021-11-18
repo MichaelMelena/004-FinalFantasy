@@ -1,0 +1,60 @@
+{
+	"name": "Dreams of Ice",
+	"patch": 2.4,
+	"quests": [
+		{
+			"quest": "Traitor in the Midst"
+		},
+		{
+			"quest": "Back and Fourth"
+		},
+		{
+			"quest": "Coming to Terms"
+		},
+		{
+			"quest": "The Intercession of Saints"
+		},
+		{
+			"quest": "Strength in Unity"
+		},
+		{
+			"quest": "Dark Words, Dark Deeds"
+		},
+		{
+			"quest": "First Blood"
+		},
+		{
+			"quest": "The Path of the Righteous"
+		},
+		{
+			"quest": "For the Greater Good"
+		},
+		{
+			"quest": "Tendrils of Intrigue"
+		},
+		{
+			"quest": "Chasing Ivy"
+		},
+		{
+			"quest": "In Flagrante Delicto"
+		},
+		{
+			"quest": "A Simple Plan"
+		},
+		{
+			"quest": "The Instruments of Our Deliverance"
+		},
+		{
+			"quest": "The Road Less Traveled"
+		},
+		{
+			"quest": "Eyes Unclouded"
+		},
+		{
+			"quest": "The Reason Roaille"
+		},
+		{
+			"quest": "Let Us Cling Together"
+		}
+	]
+}

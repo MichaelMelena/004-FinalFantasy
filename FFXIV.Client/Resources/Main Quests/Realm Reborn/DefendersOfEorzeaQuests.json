@@ -1,0 +1,48 @@
+{
+	"name": "Defenders of Eorzea",
+	"patch": 2.3,
+	"quests": [
+		{
+			"quest": "The Great Divide"
+		},
+		{
+			"quest": "Desperate Times"
+		},
+		{
+			"quest": "Shock and Awe"
+		},
+		{
+			"quest": "Reap the Whirlwind"
+		},
+		{
+			"quest": "Revolution"
+		},
+		{
+			"quest": "Stories We Tell"
+		},
+		{
+			"quest": "Lord of Levin"
+		},
+		{
+			"quest": "Levin an Impression"
+		},
+		{
+			"quest": "What Little Gods Are Made Of"
+		},
+		{
+			"quest": "Guardian of Eorzea"
+		},
+		{
+			"quest": "Recruiting the Realm"
+		},
+		{
+			"quest": "Heretical Harassment"
+		},
+		{
+			"quest": "When the Cold Sets In"
+		},
+		{
+			"quest": "Brave New Companions"
+		}
+	]
+}

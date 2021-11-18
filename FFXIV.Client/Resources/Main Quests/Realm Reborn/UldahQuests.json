@@ -1,74 +1,78 @@
-[
-	{
-		"quest": "Close to Home"
-	},
-	{
-		"quest": "We Must Rebuild"
-	},
-	{
-		"quest": "Nothing to See Here"
-	},
-	{
-		"quest": "Underneath the Sultantree"
-	},
-	{
-		"quest": "Step Nine"
-	},
-	{
-		"quest": "Prudence at This Junction"
-	},
-	{
-		"quest": "Out of House and Home"
-	},
-	{
-		"quest": "Way Down in the Hole"
-	},
-	{
-		"quest": "Takin' What They're Givin'"
-	},
-	{
-		"quest": "Supply and Demands"
-	},
-	{
-		"quest": "Give It to Me Raw"
-	},
-	{
-		"quest": "The Perfect Swarm"
-	},
-	{
-		"quest": "Last Letter to Lost Hope"
-	},
-	{
-		"quest": "Heir Today, Gone Tomorrow"
-	},
-	{
-		"quest": "Passing the Blade"
-	},
-	{
-		"quest": "Following Footfalls"
-	},
-	{
-		"quest": "Storms on the Horizon"
-	},
-	{
-		"quest": "Oh Captain, My Captain"
-	},
-	{
-		"quest": "Secrets and Lies"
-	},
-	{
-		"quest": "Duty, Honor, Country"
-	},
-	{
-		"quest": "A Matter of Tradition"
-	},
-	{
-		"quest": "A Royal Reception"
-	},
-	{
-		"quest": "The Ul'dahn Envoy"
-	},
-	{
-		"quest": "Call of the Sea"
-	}
-]
+{
+	"name": "Introduction: Ul'dah",
+	"patch": 2.0,
+	"quests": [
+		{
+			"quest": "Close to Home"
+		},
+		{
+			"quest": "We Must Rebuild"
+		},
+		{
+			"quest": "Nothing to See Here"
+		},
+		{
+			"quest": "Underneath the Sultantree"
+		},
+		{
+			"quest": "Step Nine"
+		},
+		{
+			"quest": "Prudence at This Junction"
+		},
+		{
+			"quest": "Out of House and Home"
+		},
+		{
+			"quest": "Way Down in the Hole"
+		},
+		{
+			"quest": "Takin' What They're Givin'"
+		},
+		{
+			"quest": "Supply and Demands"
+		},
+		{
+			"quest": "Give It to Me Raw"
+		},
+		{
+			"quest": "The Perfect Swarm"
+		},
+		{
+			"quest": "Last Letter to Lost Hope"
+		},
+		{
+			"quest": "Heir Today, Gone Tomorrow"
+		},
+		{
+			"quest": "Passing the Blade"
+		},
+		{
+			"quest": "Following Footfalls"
+		},
+		{
+			"quest": "Storms on the Horizon"
+		},
+		{
+			"quest": "Oh Captain, My Captain"
+		},
+		{
+			"quest": "Secrets and Lies"
+		},
+		{
+			"quest": "Duty, Honor, Country"
+		},
+		{
+			"quest": "A Matter of Tradition"
+		},
+		{
+			"quest": "A Royal Reception"
+		},
+		{
+			"quest": "The Ul'dahn Envoy"
+		},
+		{
+			"quest": "Call of the Sea"
+		}
+	]
+}

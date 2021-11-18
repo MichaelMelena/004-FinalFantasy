@@ -1,0 +1,36 @@
+{
+	"name": "A Realm Awoken",
+	"patch": 2.1,
+	"quests": [
+		{
+			"quest": "The Price of Principles"
+		},
+		{
+			"quest": "Moving On"
+		},
+		{
+			"quest": "All Things in Time"
+		},
+		{
+			"quest": "Laying the Foundation"
+		},
+		{
+			"quest": "It's Possibly a Primal"
+		},
+		{
+			"quest": "Hail to the King, Kupo"
+		},
+		{
+			"quest": "You Have Selected Regicide"
+		},
+		{
+			"quest": "On the Properties of Primals"
+		},
+		{
+			"quest": "The Gifted"
+		},
+		{
+			"quest": "Build on the Stone"
+		}
+	]
+}

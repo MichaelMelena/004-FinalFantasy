@@ -1,443 +1,411 @@
-[
-	{
-		"quest": "It's Probably Pirates"
-	},
-	{
-		"quest": "Call of the Forest"
-	},
-	{
-		"quest": "Fire in the Gloom"
-	},
-	{
-		"quest": "Call of the Desert"
-	},
-	{
-		"quest": "Into a Copper Hell"
-	},
-	{
-		"quest": "The Scions of the Seventh Dawn (Quest)"
-	},
-	{
-		"quest": "A Wild Rose by Any Other Name"
-	},
-	{
-		"quest": "Unsolved Mystery"
-	},
-	{
-		"quest": "What Poor People Think"
-	},
-	{
-		"quest": "For the Children"
-	},
-	{
-		"quest": "Amalj'aa Wrong Places"
-	},
-	{
-		"quest": "Dressed to Deceive"
-	},
-	{
-		"quest": "Life, Materia and Everything"
-	},
-	{
-		"quest": "Lord of the Inferno"
-	},
-	{
-		"quest": "A Hero in the Making"
-	},
-	{
-		"quest": "The Company You Keep (Immortal Flames)"
-	},
-	{
-		"quest": "Sylph-management"
-	},
-	{
-		"quest": "We Come in Peace"
-	},
-	{
-		"quest": "Sylphic Studies"
-	},
-	{
-		"quest": "First Impressions"
-	},
-	{
-		"quest": "First Contact"
-	},
-	{
-		"quest": "Dance Dance Diplomacy"
-	},
-	{
-		"quest": "Forest Friend"
-	},
-	{
-		"quest": "Presence of the Enemy"
-	},
-	{
-		"quest": "Brotherly Love"
-	},
-	{
-		"quest": "Spirited Away"
-	},
-	{
-		"quest": "Druthers House Rules"
-	},
-	{
-		"quest": "Never Forget"
-	},
-	{
-		"quest": "Microbrewing"
-	},
-	{
-		"quest": "Like Fine Wine"
-	},
-	{
-		"quest": "Sylphish Concerns"
-	},
-	{
-		"quest": "Nouveau Riche"
-	},
-	{
-		"quest": "Into the Beast's Maw"
-	},
-	{
-		"quest": "A Simple Gift"
-	},
-	{
-		"quest": "Believe in Your Sylph"
-	},
-	{
-		"quest": "Back from the Wood"
-	},
-	{
-		"quest": "Shadow of Darkness"
-	},
-	{
-		"quest": "Highbridge Times"
-	},
-	{
-		"quest": "Where There Is Smoke"
-	},
-	{
-		"quest": "On to Little Ala Mhigo"
-	},
-	{
-		"quest": "Tea for Three"
-	},
-	{
-		"quest": "Foot in the Door"
-	},
-	{
-		"quest": "Meeting with the Resistance"
-	},
-	{
-		"quest": "Killing Him Softly"
-	},
-	{
-		"quest": "Helping Horn"
-	},
-	{
-		"quest": "He Ain't Heavy"
-	},
-	{
-		"quest": "Come Highly Recommended"
-	},
-	{
-		"quest": "The Bear and the Young'uns' Cares"
-	},
-	{
-		"quest": "Wilred Wants You"
-	},
-	{
-		"quest": "Big Trouble in Little Ala Mhigo"
-	},
-	{
-		"quest": "Back to Square One"
-	},
-	{
-		"quest": "Terror at Fallgourd"
-	},
-	{
-		"quest": "Ziz Is So Ridiculous"
-	},
-	{
-		"quest": "Rock of Rancor"
-	},
-	{
-		"quest": "Seeing Eye to Winged Eye"
-	},
-	{
-		"quest": "Power of Deduction"
-	},
-	{
-		"quest": "Secret of the White Lily"
-	},
-	{
-		"quest": "Skeletons in Her Closet"
-	},
-	{
-		"quest": "Wrath of the Titan"
-	},
-	{
-		"quest": "Tales from the Tidus Slayer"
-	},
-	{
-		"quest": "Hungry Hungry Goobbues"
-	},
-	{
-		"quest": "The Lominsan Way"
-	},
-	{
-		"quest": "Nix That"
-	},
-	{
-		"quest": "A Modest Proposal"
-	},
-	{
-		"quest": "Trial by Turtle"
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	},
-	{
-		"quest": ""
-	}
-]
+{
+	"name": "A Realm Reborn",
+	"patch": 2.0,
+	"quests": [
+		{
+			"quest": "It's Probably Pirates"
+		},
+		{
+			"quest": "Call of the Forest"
+		},
+		{
+			"quest": "Fire in the Gloom"
+		},
+		{
+			"quest": "Call of the Desert"
+		},
+		{
+			"quest": "Into a Copper Hell"
+		},
+		{
+			"quest": "The Scions of the Seventh Dawn (Quest)"
+		},
+		{
+			"quest": "A Wild Rose by Any Other Name"
+		},
+		{
+			"quest": "Unsolved Mystery"
+		},
+		{
+			"quest": "What Poor People Think"
+		},
+		{
+			"quest": "For the Children"
+		},
+		{
+			"quest": "Amalj'aa Wrong Places"
+		},
+		{
+			"quest": "Dressed to Deceive"
+		},
+		{
+			"quest": "Life, Materia and Everything"
+		},
+		{
+			"quest": "Lord of the Inferno"
+		},
+		{
+			"quest": "A Hero in the Making"
+		},
+		{
+			"quest": "The Company You Keep (Immortal Flames)"
+		},
+		{
+			"quest": "Sylph-management"
+		},
+		{
+			"quest": "We Come in Peace"
+		},
+		{
+			"quest": "Sylphic Studies"
+		},
+		{
+			"quest": "First Impressions"
+		},
+		{
+			"quest": "First Contact"
+		},
+		{
+			"quest": "Dance Dance Diplomacy"
+		},
+		{
+			"quest": "Forest Friend"
+		},
+		{
+			"quest": "Presence of the Enemy"
+		},
+		{
+			"quest": "Brotherly Love"
+		},
+		{
+			"quest": "Spirited Away"
+		},
+		{
+			"quest": "Druthers House Rules"
+		},
+		{
+			"quest": "Never Forget"
+		},
+		{
+			"quest": "Microbrewing"
+		},
+		{
+			"quest": "Like Fine Wine"
+		},
+		{
+			"quest": "Sylphish Concerns"
+		},
+		{
+			"quest": "Nouveau Riche"
+		},
+		{
+			"quest": "Into the Beast's Maw"
+		},
+		{
+			"quest": "A Simple Gift"
+		},
+		{
+			"quest": "Believe in Your Sylph"
+		},
+		{
+			"quest": "Back from the Wood"
+		},
+		{
+			"quest": "Shadow of Darkness"
+		},
+		{
+			"quest": "Highbridge Times"
+		},
+		{
+			"quest": "Where There Is Smoke"
+		},
+		{
+			"quest": "On to Little Ala Mhigo"
+		},
+		{
+			"quest": "Tea for Three"
+		},
+		{
+			"quest": "Foot in the Door"
+		},
+		{
+			"quest": "Meeting with the Resistance"
+		},
+		{
+			"quest": "Killing Him Softly"
+		},
+		{
+			"quest": "Helping Horn"
+		},
+		{
+			"quest": "He Ain't Heavy"
+		},
+		{
+			"quest": "Come Highly Recommended"
+		},
+		{
+			"quest": "The Bear and the Young'uns' Cares"
+		},
+		{
+			"quest": "Wilred Wants You"
+		},
+		{
+			"quest": "Big Trouble in Little Ala Mhigo"
+		},
+		{
+			"quest": "Back to Square One"
+		},
+		{
+			"quest": "Terror at Fallgourd"
+		},
+		{
+			"quest": "Ziz Is So Ridiculous"
+		},
+		{
+			"quest": "Rock of Rancor"
+		},
+		{
+			"quest": "Seeing Eye to Winged Eye"
+		},
+		{
+			"quest": "Power of Deduction"
+		},
+		{
+			"quest": "Secret of the White Lily"
+		},
+		{
+			"quest": "Skeletons in Her Closet"
+		},
+		{
+			"quest": "Wrath of the Titan"
+		},
+		{
+			"quest": "Tales from the Tidus Slayer"
+		},
+		{
+			"quest": "Hungry Hungry Goobbues"
+		},
+		{
+			"quest": "The Lominsan Way"
+		},
+		{
+			"quest": "Nix That"
+		},
+		{
+			"quest": "A Modest Proposal"
+		},
+		{
+			"quest": "Trial by Turtle"
+		},
+		{
+			"quest": "The Perfect Prey"
+		},
+		{
+			"quest": "When the Worm Turns"
+		},
+		{
+			"quest": "There and Back Again"
+		},
+		{
+			"quest": "The Things We Do for Cheese"
+		},
+		{
+			"quest": "What Do You Mean You Forgot the Wine"
+		},
+		{
+			"quest": "An Offer You Can Refuse"
+		},
+		{
+			"quest": "It Won't Work"
+		},
+		{
+			"quest": "Give a Man a Drink"
+		},
+		{
+			"quest": "That Weight"
+		},
+		{
+			"quest": "Battle Scars"
+		},
+		{
+			"quest": "It Was a Very Good Year"
+		},
+		{
+			"quest": "In the Company of Heroes"
+		},
+		{
+			"quest": "As You Wish"
+		},
+		{
+			"quest": "Lord of Crags"
+		},
+		{
+			"quest": "All Good Things"
+		},
+		{
+			"quest": "You Can't Take It with You"
+		},
+		{
+			"quest": "Bringing out the Dead"
+		},
+		{
+			"quest": "Bury Me Not on the Lone Prairie"
+		},
+		{
+			"quest": "Eyes on Me"
+		},
+		{
+			"quest": "He Who Waited Behind"
+		},
+		{
+			"quest": "Cold Reception"
+		},
+		{
+			"quest": "The Unending War"
+		},
+		{
+			"quest": "Men of Honor"
+		},
+		{
+			"quest": "Three for Three"
+		},
+		{
+			"quest": "The Rose and the Unicorn"
+		},
+		{
+			"quest": "The Talk of Coerthas"
+		},
+		{
+			"quest": "Road to Redemption"
+		},
+		{
+			"quest": "Following the Evidence"
+		},
+		{
+			"quest": "In the Eyes of Gods and Men"
+		},
+		{
+			"quest": "The Final Flight of the Enterprise"
+		},
+		{
+			"quest": "Ye of Little Faith"
+		},
+		{
+			"quest": "Factual Folklore"
+		},
+		{
+			"quest": "The Best Inventions"
+		},
+		{
+			"quest": "Influencing Inquisitors"
+		},
+		{
+			"quest": "By the Lights of Ishgard"
+		},
+		{
+			"quest": "Blood for Blood"
+		},
+		{
+			"quest": "The Heretic among Us"
+		},
+		{
+			"quest": "In Pursuit of the Past"
+		},
+		{
+			"quest": "Into the Eye of the Storm"
+		},
+		{
+			"quest": "Sealed with Science"
+		},
+		{
+			"quest": "With the Utmost Care"
+		},
+		{
+			"quest": "A Promising Prospect"
+		},
+		{
+			"quest": "It's Probably Not Pirates"
+		},
+		{
+			"quest": "Representing the Representative"
+		},
+		{
+			"quest": "The Reluctant Researcher"
+		},
+		{
+			"quest": "Sweet Somethings"
+		},
+		{
+			"quest": "History Repeating"
+		},
+		{
+			"quest": "The Curious Case of Giggity"
+		},
+		{
+			"quest": "Better Late than Never"
+		},
+		{
+			"quest": "Lady of the Vortex"
+		},
+		{
+			"quest": "Reclamation"
+		},
+		{
+			"quest": "Casing the Castrum"
+		},
+		{
+			"quest": "Eyes on the Empire"
+		},
+		{
+			"quest": "Footprints in the Snow"
+		},
+		{
+			"quest": "Monumental Hopes"
+		},
+		{
+			"quest": "Notorious Biggs"
+		},
+		{
+			"quest": "Come-Into-My-Castrum"
+		},
+		{
+			"quest": "Getting Even with Garlemald"
+		},
+		{
+			"quest": "Acting the Part"
+		},
+		{
+			"quest": "Dressed for Conquest"
+		},
+		{
+			"quest": "Drowning Out the Voices"
+		},
+		{
+			"quest": "Fool Me Twice"
+		},
+		{
+			"quest": "Every Little Thing She Does Is Magitek"
+		},
+		{
+			"quest": "Escape from Castrum Centri"
+		},
+		{
+			"quest": "The Black Wolf's Ultimatum"
+		},
+		{
+			"quest": "Operation Archon"
+		},
+		{
+			"quest": "A Hero in Need"
+		},
+		{
+			"quest": "Hearts on Fire"
+		},
+		{
+			"quest": "Rock the Castrum"
+		},
+		{
+			"quest": "The Ultimate Weapon"
+		}
+	]
+}

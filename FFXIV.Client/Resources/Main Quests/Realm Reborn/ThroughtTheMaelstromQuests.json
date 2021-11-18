@@ -1,0 +1,48 @@
+{
+	"name": "Through the Maelstrom",
+	"patch": 2.2,
+	"quests": [
+		{
+			"quest": "Still Waters"
+		},
+		{
+			"quest": "A Final Temptation"
+		},
+		{
+			"quest": "The Mother of Exiles"
+		},
+		{
+			"quest": "Promises to Keep"
+		},
+		{
+			"quest": "Yugiri's Game"
+		},
+		{
+			"quest": "Why We Adventure"
+		},
+		{
+			"quest": "All Due Respect"
+		},
+		{
+			"quest": "The Sea Rises"
+		},
+		{
+			"quest": "Scouts in Distress"
+		},
+		{
+			"quest": "The Gift of Eternity"
+		},
+		{
+			"quest": "Into the Heart of the Whorl"
+		},
+		{
+			"quest": "Lord of the Whorl"
+		},
+		{
+			"quest": "When Yugiri Met the Fraternity"
+		},
+		{
+			"quest": "Through the Maelstrom"
+		}
+	]
+}

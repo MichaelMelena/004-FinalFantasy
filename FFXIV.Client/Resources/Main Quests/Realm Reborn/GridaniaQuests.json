@@ -1,71 +1,75 @@
-[
-	{
-		"quest": "Close to Home"
-	},
-	{
-		"quest": "To the Bannock"
-	},
-	{
-		"quest": "Passing Muster"
-	},
-	{
-		"quest": "Chasing Shadows"
-	},
-	{
-		"quest": "Eggs over Queasy"
-	},
-	{
-		"quest": "Surveying the Damage"
-	},
-	{
-		"quest": "A Soldier's Breakfast"
-	},
-	{
-		"quest": "Spirithold Broken"
-	},
-	{
-		"quest": "On to Bentbranch"
-	},
-	{
-		"quest": "You Shall Not Trespass"
-	},
-	{
-		"quest": "Don't Look Down"
-	},
-	{
-		"quest": "In the Grim Darkness of the Forest\t"
-	},
-	{
-		"quest": "Threat Level Elevated"
-	},
-	{
-		"quest": "Migrant Marauders"
-	},
-	{
-		"quest": "A Hearer Is Often Late"
-	},
-	{
-		"quest": "Salvaging the Scene"
-	},
-	{
-		"quest": "Leia's Legacy"
-	},
-	{
-		"quest": "Dread Is in the Air"
-	},
-	{
-		"quest": "To Guard a Guardian"
-	},
-	{
-		"quest": "Festive Endeavors"
-	},
-	{
-		"quest": "Renewing the Covenant"
-	},
-	{
-		"quest": "The Gridanian Envoy"
-	},
-	{
-		"quest": "Call of the Sea"
-	}
-]
+{
+	"name": "Introduction: Gridania",
+	"patch": 2.0,
+	"quests": [
+		{
+			"quest": "Close to Home"
+		},
+		{
+			"quest": "To the Bannock"
+		},
+		{
+			"quest": "Passing Muster"
+		},
+		{
+			"quest": "Chasing Shadows"
+		},
+		{
+			"quest": "Eggs over Queasy"
+		},
+		{
+			"quest": "Surveying the Damage"
+		},
+		{
+			"quest": "A Soldier's Breakfast"
+		},
+		{
+			"quest": "Spirithold Broken"
+		},
+		{
+			"quest": "On to Bentbranch"
+		},
+		{
+			"quest": "You Shall Not Trespass"
+		},
+		{
+			"quest": "Don't Look Down"
+		},
+		{
+			"quest": "In the Grim Darkness of the Forest\t"
+		},
+		{
+			"quest": "Threat Level Elevated"
+		},
+		{
+			"quest": "Migrant Marauders"
+		},
+		{
+			"quest": "A Hearer Is Often Late"
+		},
+		{
+			"quest": "Salvaging the Scene"
+		},
+		{
+			"quest": "Leia's Legacy"
+		},
+		{
+			"quest": "Dread Is in the Air"
+		},
+		{
+			"quest": "To Guard a Guardian"
+		},
+		{
+			"quest": "Festive Endeavors"
+		},
+		{
+			"quest": "Renewing the Covenant"
+		},
+		{
+			"quest": "The Gridanian Envoy"
+		},
+		{
+			"quest": "Call of the Sea"
+		}
+	]
+}
