@@ -28,13 +28,13 @@ public class CharacterProfileParser : ICharacterProfileParser
 		//TODO: Do the parsing
 		HtmlNode characterDiv = htmlDocument.GetElementbyId("character");
 
-		var name = ParseName(characterDiv);
+		string name = ParseName(characterDiv);
 		(Race race, Clan clan, Gender gender) = ParseCharacterBlock(characterDiv);
 
 
-		//var profile = new Profile(name,);
+		//var profile = new Profile(name,)
 
-		return null;
+		throw new NotImplementedException();
 	}
 
 

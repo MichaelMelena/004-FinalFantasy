@@ -1,25 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<ItemGroup>
+		<Folder Include="Resolvers\" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Resolvers\" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.38" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Refit" Version="6.1.15" />
+		<PackageReference Include="Refit.HttpClientFactory" Version="6.1.15" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.38" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
-    <PackageReference Include="Refit" Version="6.1.15" />
-    <PackageReference Include="Refit.HttpClientFactory" Version="6.1.15" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FFXIV.Models\FFXIV.Models.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\FFXIV.Models\FFXIV.Models.csproj" />
+	</ItemGroup>
 
 </Project>
