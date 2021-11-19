@@ -14,8 +14,6 @@ public static class IServiceCollectionExtensions
 
 		});
 
-		services.AddScoped<ICharacterProfileParser, CharacterProfileParser>();
-
 		return services;
 	}
 }

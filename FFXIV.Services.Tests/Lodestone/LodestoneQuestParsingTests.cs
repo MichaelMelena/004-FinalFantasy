@@ -1,7 +1,4 @@
-﻿using System.Threading.Tasks;
-using FFXIV.Services.Lodestone;
-using FFXIV.Services.Lodestone.Http;
-using HtmlAgilityPack;
+﻿using FFXIV.Services.Lodestone.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Refit;
 
@@ -11,11 +8,9 @@ namespace FFXIV.Services.Tests.Lodestone;
 public class LodestoneQuestParsingTests
 {
 	[TestMethod]
-	public async Task Test()
+	public Task Test()
 	{
-		var api = RestService.For<ILodestoneCharacterProfileApi>("https://eu.finalfantasyxiv.com");
-		var characterParser = new CharacterProfileParser(api);
-
-		var profile = await characterParser.GetProfileAsync("28632101");
+		//ILodestoneCharacterProfileApi api = RestService.For<ILodestoneCharacterProfileApi>("https://eu.finalfantasyxiv.com");
+		throw new NotImplementedException();
 	}
 }
