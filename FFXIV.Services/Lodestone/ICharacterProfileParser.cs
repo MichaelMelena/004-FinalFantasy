@@ -1,4 +1,4 @@
-﻿using FFXIV.Services.Lodestone.Models;
+﻿using FFXIV.Models.Characters.Profiles;
 
 namespace FFXIV.Services.Lodestone;
 
