@@ -3,19 +3,23 @@ using HtmlAgilityPack;
 
 namespace FFXIV.Services.Parsers.Profiles;
 
-public  interface ICharacterProfileParser
+public interface ICharacterProfileParser
 {
 	string ParseName(HtmlNode html);
 
-	(Race race, Clan clan, Gender gender) ParseCharacterBlock(HtmlNode html);
-
-	string ParseCityState(HtmlNode html);
+	CityState ParseCityState(HtmlNode html);
 
 	string ParseNameDay(HtmlNode html);
 
-	string ParseGrandComapny(HtmlNode html);
+	GrandCompanyInfo ParseGrandComapny(HtmlNode html);
 
 	Profile ParseProfile(HtmlNode html);
 
 	string ParseServer(HtmlNode html);
+
+	Race ParseRace(HtmlNode html);
+
+	Clan ParseClan(HtmlNode html);
+
+	Gender ParseGender(HtmlNode html);
 }

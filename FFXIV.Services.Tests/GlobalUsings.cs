@@ -1,1 +1,2 @@
-﻿//global using TODO:
+﻿global using Microsoft.VisualStudio.TestTools.UnitTesting;
+global using FluentAssertions;

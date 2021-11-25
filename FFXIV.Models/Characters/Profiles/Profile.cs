@@ -1,26 +1,12 @@
-﻿namespace FFXIV.Models.Characters.Profiles;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
+
+namespace FFXIV.Models.Characters.Profiles;
 
 public record class Profile
 {
-	public Profile(
-		string name,
-		Race race,
-		Clan clan,
-		Gender gender,
-		CityState cityState,
-		GrandCompany grandCompany,
-		string nameDay)
-	{
-		Name = name;
-		Race = race;
-		Clan = clan;
-		Gender = gender;
-		CityState = cityState;
-		GrandCompany = grandCompany;
-		NameDay = nameDay;
-	}
-
-	private string? _name;
+	private string? _name = "your name";
+	[NotNull]
 	public string Name
 	{
 		get => _name!;
@@ -39,9 +25,20 @@ public record class Profile
 
 	public CityState CityState { get; set; }
 
-	public GrandCompany GrandCompany { get; set; }
+	private GrandCompanyInfo? grandCompanyInfo;
+	public GrandCompanyInfo GrandCompanyInfo
+	{
+		get => grandCompanyInfo!;
+		set
+		{
+			ArgumentNullException.ThrowIfNull(value);
+			grandCompanyInfo = value;
+		}
+	}
 
-	private string? _nameDay;
+
+	private string? _nameDay = "long long time ago!";
+	[NotNull]
 	public string NameDay
 	{
 		get { return _nameDay!; }
