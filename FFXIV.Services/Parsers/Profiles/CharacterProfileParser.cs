@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using FFXIV.Models.Characters.Profiles;
+using FFXIV.Models.Extensions;
 using HtmlAgilityPack;
 
 namespace FFXIV.Services.Parsers.Profiles;
@@ -52,17 +53,20 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 	{
 		ArgumentNullException.ThrowIfNull(html);
 
-		string xPath = ".//div[p='Grand-company']/p[last()]";
+		string xPath = ".//div[p='Grand Company']/p[last()]";
 		HtmlNode? node = html?.SelectSingleNode(xPath);
 		HtmlNode grandCompanyInfoNode = ReturnNotNullOrThrow(node, xPath);
 
 		string[] grandCompanyInfoArray = grandCompanyInfoNode.InnerText.Split("/");
 
-		string grandCompanyText = grandCompanyInfoArray[0];
-		string rankText = grandCompanyInfoArray[1];
+		string grandCompanyText = grandCompanyInfoArray[0].Trim();
+		string rankText = grandCompanyInfoArray[1].Trim();
 
-		GrandCompany grandCompany = ParseEnum<GrandCompany>(grandCompanyText);
-		GrandCompanyRank rank = ParseEnum<GrandCompanyRank>(rankText);
+		Dictionary<string, GrandCompany> descriptionToGrandCompanyDictionary = Enum.GetValues<GrandCompany>().ToDictionary(x => x.GetDescription()!, x => x);
+		GrandCompany grandCompany = descriptionToGrandCompanyDictionary[grandCompanyText];
+
+		Dictionary<string, GrandCompanyRank> descriptionToRankDictionary = Enum.GetValues<GrandCompanyRank>().ToDictionary(x => x.GetDescription()!, x => x);
+		GrandCompanyRank rank = descriptionToRankDictionary[rankText];
 
 		return new GrandCompanyInfo(grandCompany, rank);
 	}
@@ -104,10 +108,12 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 
 		string name = ParseName(html);
 		string nameDay = ParseNameDay(html);
+		string server = ParseServer(html);
 
 		Gender gender = ParseGender(html);
 		Clan clan = ParseClan(html);
 		Race race = ParseRace(html);
+
 
 		CityState cityState = ParseCityState(html);
 		GrandCompanyInfo grandCompanyInfo = ParseGrandComapny(html);
@@ -121,6 +127,7 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 			Race = race,
 			GrandCompanyInfo = grandCompanyInfo,
 			NameDay = nameDay,
+			Server = server
 		};
 
 		return profile;
@@ -139,7 +146,15 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 	public string ParseServer(HtmlNode html)
 	{
 		ArgumentNullException.ThrowIfNull(html);
-		throw new NotImplementedException();
+
+		string xPath = ".//p[@class='frame__chara__world']";
+
+		HtmlNode? node = html.SelectSingleNode(xPath);
+		HtmlNode serverNameNode = ReturnNotNullOrThrow(node, xPath);
+
+		string serverName = serverNameNode.InnerText.Trim().Replace("&nbsp;", " ");
+
+		return serverName;
 	}
 
 	private HtmlNode GetCharacteristicNode(HtmlNode html)

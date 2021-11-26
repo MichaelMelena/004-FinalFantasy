@@ -1,7 +1,6 @@
 ﻿using FFXIV.Models.Characters.Profiles;
 using FFXIV.Services.Parsers.Profiles;
 using HtmlAgilityPack;
-using Moq;
 
 namespace FFXIV.Services.Tests.Lodestone;
 
@@ -16,7 +15,7 @@ public class LodesStoneProfileParsingTests
 
 	private HtmlDocument InvalidRaceClanGenderHtml { get; } = new HtmlDocument();
 
-	
+
 	public LodesStoneProfileParsingTests()
 	{
 		InvalidHtml.LoadHtml("");
@@ -69,16 +68,11 @@ public class LodesStoneProfileParsingTests
 	public void ParseRace_Invalid_Enum_Test()
 	{
 		// act
-		 Action act = ()=>  ProfileParser.ParseRace(InvalidRaceClanGenderHtml.DocumentNode);
+		Action act = () => ProfileParser.ParseRace(InvalidRaceClanGenderHtml.DocumentNode);
 
 		// assert
 		act.Should().Throw<ArgumentOutOfRangeException>();
 	}
-
-	
-
-	
-
 
 	[TestMethod]
 	public void ParseRace_Test()
@@ -250,4 +244,69 @@ public class LodesStoneProfileParsingTests
 		act.Should().Throw<ArgumentException>();
 	}
 
+	[TestMethod]
+	public void ParseServer_Test()
+	{
+		// act
+		string serverName = ProfileParser.ParseServer(ProfileHtml.DocumentNode);
+
+		// assert
+		serverName.Should().NotBeNullOrWhiteSpace().And.BeEquivalentTo("Twintania (Light)");
+	}
+
+	[TestMethod]
+	public void ParseServer_Null_Test()
+	{
+		// act
+		Action act = () => ProfileParser.ParseServer(null!);
+
+		// assert
+		act.Should().Throw<ArgumentNullException>();
+	}
+
+	[TestMethod]
+	public void ParseServer_Invalid_Html_Test()
+	{
+		// act
+		Action act = () => ProfileParser.ParseServer(InvalidHtml.DocumentNode);
+
+		// assert
+		act.Should().Throw<ArgumentException>();
+	}
+
+
+
+	[TestMethod]
+	public void ParseGrandComapny_Test()
+	{
+		// act
+		GrandCompanyInfo grandCompanyInfo = ProfileParser.ParseGrandComapny(ProfileHtml.DocumentNode);
+
+		// assert
+		grandCompanyInfo.Should().NotBeNull();
+
+		grandCompanyInfo.GrandCompany.Should().Be(GrandCompany.ImmortalFlames);
+		grandCompanyInfo.Rank.Should().Be(GrandCompanyRank.SecondFlameLieutenant);
+	}
+
+
+	[TestMethod]
+	public void ParseProfile_Test()
+	{
+		// act
+		Profile profile = ProfileParser.ParseProfile(ProfileHtml.DocumentNode);
+
+		// assert
+		profile.Should().NotBeNull();
+
+		profile.CityState.Should().Be(CityState.Gridania);
+		profile.Clan.Should().Be(Clan.Hellsguard);
+		profile.Gender.Should().Be(Gender.Male);
+		profile.Name.Should().Be("Elseif Machina");
+		profile.NameDay.Should().Be("13th Sun of the 3rd Astral Moon");
+		profile.Server.Should().Be("Twintania (Light)");
+		profile.Race.Should().Be(Race.Roegadyn);
+		profile.GrandCompanyInfo.Should().Be(new GrandCompanyInfo(GrandCompany.ImmortalFlames, GrandCompanyRank.SecondFlameLieutenant));
+
+	}
 }

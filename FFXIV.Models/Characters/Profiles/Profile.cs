@@ -49,4 +49,18 @@ public record class Profile
 		}
 	}
 
+
+
+	private string? server = "new server. who this?";
+	[NotNull]
+	public string Server
+	{
+		get => server!;
+		set
+		{
+			ArgumentNullException.ThrowIfNull(value);
+			server = value;
+		}
+	}
+
 }

@@ -1,8 +1,15 @@
-﻿namespace FFXIV.Models.Characters.Profiles;
+﻿using System.ComponentModel;
+
+namespace FFXIV.Models.Characters.Profiles;
 
 public enum GrandCompany
 {
+	[Description("Immortal Flames")]
 	ImmortalFlames = 0,
+	
+	[Description("Maelstrom")]
 	Maelstrom = 1,
-	OrderOfTheTwinAdded = 2
+
+	[Description("Order of the Twin Adder")]
+	OrderOfTheTwinAdder = 2
 }
