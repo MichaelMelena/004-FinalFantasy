@@ -75,25 +75,9 @@ public class LodesStoneProfileParsingTests
 		act.Should().Throw<ArgumentOutOfRangeException>();
 	}
 
-	[TestMethod]
-	public void ParseClan_Invalid_Enum_Test()
-	{
-		// act
-		Action act = () => ProfileParser.ParseClan(InvalidRaceClanGenderHtml.DocumentNode);
+	
 
-		// assert
-		act.Should().Throw<ArgumentOutOfRangeException>();
-	}
-
-	[TestMethod]
-	public void ParseGender_Invalid_Enum_Test()
-	{
-		// act
-		Action act = () => ProfileParser.ParseGender(InvalidRaceClanGenderHtml.DocumentNode);
-
-		// assert
-		act.Should().Throw<ArgumentOutOfRangeException>();
-	}
+	
 
 
 	[TestMethod]
@@ -157,6 +141,16 @@ public class LodesStoneProfileParsingTests
 	}
 
 	[TestMethod]
+	public void ParseClan_Invalid_Enum_Test()
+	{
+		// act
+		Action act = () => ProfileParser.ParseClan(InvalidRaceClanGenderHtml.DocumentNode);
+
+		// assert
+		act.Should().Throw<ArgumentOutOfRangeException>();
+	}
+
+	[TestMethod]
 	public void ParseGender_Test()
 	{
 		// assert
@@ -184,6 +178,16 @@ public class LodesStoneProfileParsingTests
 
 		// act
 		act.Should().Throw<ArgumentException>();
+	}
+
+	[TestMethod]
+	public void ParseGender_Invalid_Enum_Test()
+	{
+		// act
+		Action act = () => ProfileParser.ParseGender(InvalidRaceClanGenderHtml.DocumentNode);
+
+		// assert
+		act.Should().Throw<ArgumentOutOfRangeException>();
 	}
 
 	[TestMethod]
