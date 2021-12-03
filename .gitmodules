@@ -1,0 +1,6 @@
+[submodule "bootstrap"]
+	path = bootstrap
+	url = https://github.com/twbs/bootstrap.git
+[submodule "FFXIV.Bootstrap/bootstrap"]
+	path = FFXIV.Bootstrap/bootstrap
+	url = https://github.com/twbs/bootstrap.git
