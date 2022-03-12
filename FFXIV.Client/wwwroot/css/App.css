@@ -2,9 +2,11 @@
 	--color-primary: #f26722;
 	--color-black: #111;
 	--color-light: #ccc;
-	--bg-dark: #333;
-	--bg-light: #eee; 
-	font-family: Arial;	
+	--bg-dark: #222;
+	--bg-light: #eee;
+	--border-input: 0.2rem var(--color-primary);
+	--shadow-input: 0 0 0.5rem 0.5rem rgb( 253 126 20 / 40%);
+	font-family: Arial;
 }
 
 body {
@@ -16,13 +18,32 @@ h1 {
 	color: var(--color-primary);
 }
 
-input:focus {
-	box-shadow: 0 0 0.5rem 0.5rem rgb( 253 126 20 / 40%);
-	transition: box-shadow linear 0.2s;
-	
-}
+
+/* inputs */
 input {
-	transition: box-shadow linear 0.1s;
+	background-color: var(--bg-light);
+
 	border-radius: 1rem;
-	background-color: var(--bg-light)
+	border: var(--border-input);
+	box-shadow: none;
+
+	transition: all linear 1s;
+	transition-property: border, box-shadow;
+	padding: 0;
+
 }
+
+	input:focus, input:focus-visible {
+		border: none;
+		box-shadow: var(--shadow-input);
+		transition: all linear 1s;
+		transition-property: border, box-shadow;
+		outline: none
+	}
+
+	
+
+	input[type="text"]::placeholder {
+		color: var(--color-black);
+	}
+	
