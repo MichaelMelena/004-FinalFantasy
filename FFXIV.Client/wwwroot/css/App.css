@@ -1,9 +1,9 @@
 ﻿:root {
-	--color-primary: #f26722;
+	--color-primary: #ff2e41;
 	--color-black: #111;
 	--color-light: #ccc;
-	--bg-dark: #222;
-	--bg-light: #eee;
+	--bg-dark: #0f1c1c;
+	--bg-light: #f6f6f6;
 	--border-input: 0.2rem var(--color-primary);
 	--shadow-input: 0 0 0.5rem 0.5rem rgb( 253 126 20 / 40%);
 	font-family: Arial;
