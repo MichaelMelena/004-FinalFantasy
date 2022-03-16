@@ -11,5 +11,8 @@ public enum GrandCompany
 	Maelstrom = 1,
 
 	[Description("Order of the Twin Adder")]
-	OrderOfTheTwinAdder = 2
+	OrderOfTheTwinAdder = 2,
+
+	[Description("No Affiliation")]
+	NoAffiliation = 3
 }
