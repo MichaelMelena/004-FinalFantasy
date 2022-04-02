@@ -1,4 +1,5 @@
-﻿using FFXIV.Services.Lodestone.Http;
+﻿using FFXIV.Models.Characters.Profiles;
+using FFXIV.Services.Lodestone.Http;
 using Refit;
 
 namespace FFXIV.Services.Tests.Lodestone;
@@ -32,6 +33,16 @@ public class CharacterSearchTests
 
 		response.Content.Should().NotBeNullOrEmpty();
 
-
 	}
+
+	[TestMethod]
+	public async Task GetCharacterTest()
+	{
+		string id = "28632101";
+		ApiResponse<string> response = await _api.GetCharacterAsync(id);
+		response.Content.Should().NotBeNullOrWhiteSpace();
+	}
+
+	
+
 }

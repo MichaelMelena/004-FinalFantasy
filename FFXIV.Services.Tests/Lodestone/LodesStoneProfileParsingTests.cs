@@ -5,6 +5,7 @@ using HtmlAgilityPack;
 namespace FFXIV.Services.Tests.Lodestone;
 
 [TestClass]
+[TestCategory("service")]
 public class LodesStoneProfileParsingTests
 {
 	private ICharacterProfileParser ProfileParser { get; } = new CharacterProfileParser();
