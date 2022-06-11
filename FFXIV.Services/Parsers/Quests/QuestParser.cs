@@ -3,7 +3,7 @@ using HtmlAgilityPack;
 
 namespace FFXIV.Services.Parsers.Quests;
 
-public class QuestParser : ParserBase, IQuestParser
+public class QuestParser : IQuestParser
 {
 	public Quest ParseQuest(HtmlNode questEntry)
 	{
@@ -34,7 +34,7 @@ public class QuestParser : ParserBase, IQuestParser
 		List<Quest> quests = new List<Quest>();
 
 		HtmlNode? node = html.SelectSingleNode(xPathPager);
-		HtmlNode pagerLink = ReturnNotNullOrThrow(node, xPathPager);
+		HtmlNode pagerLink = node.ReturnNotNullOrThrow(xPathPager);
 
 		string? url = pagerLink.GetAttributeValue<string?>("href", null);
 

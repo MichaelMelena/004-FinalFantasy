@@ -5,7 +5,7 @@ using HtmlAgilityPack;
 
 namespace FFXIV.Services.Parsers.Profiles;
 
-public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
+public sealed class CharacterProfileParser : ICharacterProfileParser
 {
 	public CityState ParseCityState(HtmlNode html)
 	{
@@ -13,7 +13,7 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 
 		string xPath = ".//div[p='City-state']/p[last()]";
 		HtmlNode? node = html?.SelectSingleNode(xPath);
-		HtmlNode cityStateNode = ReturnNotNullOrThrow(node, xPath);
+		HtmlNode cityStateNode = node.ReturnNotNullOrThrow(xPath);
 
 		string cityStateText = cityStateNode.InnerText;
 		CityState cityState = ParseEnum<CityState>(cityStateText);
@@ -55,7 +55,7 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 
 		string xPath = ".//div[p='Grand Company']/p[last()]";
 		HtmlNode? node = html?.SelectSingleNode(xPath);
-		HtmlNode grandCompanyInfoNode = ReturnNotNullOrThrow(node, xPath);
+		HtmlNode grandCompanyInfoNode = node.ReturnNotNullOrThrow(xPath);
 
 		string[] grandCompanyInfoArray = grandCompanyInfoNode.InnerText.Split("/");
 
@@ -95,7 +95,7 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 
 		string xPath = ".//p[@class='frame__chara__name']";
 		HtmlNode? node = html?.SelectSingleNode(xPath);
-		HtmlNode nameNode = ReturnNotNullOrThrow(node, xPath);
+		HtmlNode nameNode = node.ReturnNotNullOrThrow(xPath);
 
 		string name = nameNode.InnerText.Trim();
 
@@ -113,7 +113,7 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 
 		string xPath = ".//p[@class='character-block__birth']";
 		HtmlNode? node = html?.SelectSingleNode(xPath);
-		HtmlNode nameDayNode = ReturnNotNullOrThrow(node, xPath);
+		HtmlNode nameDayNode = node.ReturnNotNullOrThrow(xPath);
 
 		string nameDay = nameDayNode.InnerText;
 
@@ -168,7 +168,7 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 		string xPath = ".//p[@class='frame__chara__world']";
 
 		HtmlNode? node = html.SelectSingleNode(xPath);
-		HtmlNode serverNameNode = ReturnNotNullOrThrow(node, xPath);
+		HtmlNode serverNameNode = node.ReturnNotNullOrThrow(xPath);
 
 		string serverName = serverNameNode.InnerText.Trim().Replace("&nbsp;", " ");
 
@@ -181,7 +181,7 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 
 		string xPath = ".//p[@class='character-block__name']";
 		HtmlNode? characterBlockNode = html?.SelectSingleNode(xPath);
-		return ReturnNotNullOrThrow(characterBlockNode, xPath);
+		return characterBlockNode.ReturnNotNullOrThrow(xPath);
 	}
 
 	private string[] GetGenderAndClan(HtmlNode html)
