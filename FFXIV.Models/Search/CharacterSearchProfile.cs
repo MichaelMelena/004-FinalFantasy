@@ -1,8 +1,11 @@
 ﻿namespace FFXIV.Models.Search;
 
-public class CharacterSearchProfile
+public record class CharacterSearchProfile
 {
-	public DataCenter DataCenter { get; init; }
-	public HomeWorld HomeWorld { get; init; }
+	public Server Server { get; init; } = new Server();
+	public Language Language { get; init; }
+	public string Name { get; init; } = string.Empty;
+	public Uri? CharacterUri { get; init; }
+	public Uri? PortraitUri { get; init; }
 }
 

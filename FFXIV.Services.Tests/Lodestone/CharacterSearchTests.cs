@@ -1,5 +1,8 @@
 ﻿using FFXIV.Models.Characters.Profiles;
+using FFXIV.Models.Search;
 using FFXIV.Services.Lodestone.Http;
+using FFXIV.Services.Parsers.CharacterSearch;
+using HtmlAgilityPack;
 using Refit;
 
 namespace FFXIV.Services.Tests.Lodestone;
@@ -23,6 +26,31 @@ public class CharacterSearchTests
 		// setup
 
 		string name = "Elseif Machina";
+		CharacterSearchParser parser = new CharacterSearchParser();
+		// act
+
+		ApiResponse<string> response = await _api.Search(name, null, null, null, null);
+
+		HtmlDocument htmlDocument = new HtmlDocument();
+		htmlDocument.LoadHtml(response.Content);
+
+		List<CharacterSearchProfile> profiles = parser.ParseSearchItems(htmlDocument.DocumentNode);
+
+		// assert
+		response.IsSuccessStatusCode.Should().BeTrue();
+
+		response.Content.Should().NotBeNullOrEmpty();
+
+		profiles.Should().NotBeNullOrEmpty();
+
+	}
+
+	[TestMethod]
+	public async Task ParseCharacterSearchTest()
+	{
+		// setup
+
+		string name = "Elseif Machina";
 
 		// act
 
@@ -32,7 +60,6 @@ public class CharacterSearchTests
 		response.IsSuccessStatusCode.Should().BeTrue();
 
 		response.Content.Should().NotBeNullOrEmpty();
-
 	}
 
 	[TestMethod]
@@ -42,6 +69,8 @@ public class CharacterSearchTests
 		ApiResponse<string> response = await _api.GetCharacterAsync(id);
 		response.Content.Should().NotBeNullOrWhiteSpace();
 	}
+
+
 
 	
 

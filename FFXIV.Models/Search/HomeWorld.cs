@@ -1,11 +1,78 @@
-﻿using System;
-namespace FFXIV.Models.Search
-{
-	public class HomeWorld
-	{
-		public HomeWorld()
-		{
-		}
-	}
-}
+﻿namespace FFXIV.Models.Search;
 
+public enum HomeWorld
+{
+	Adamantoise,
+	Aegis,
+	Alexander,
+	Anima,
+	Asura,
+	Atomos,
+	Bahamut,
+	Balmung,
+	Behemoth,
+	Belias,
+	Bismarck,
+	Brynhildr,
+	Cactuar,
+	Carbuncle,
+	Cerberus,
+	Chocobo,
+	Coeurl,
+	Diabolos,
+	Durandal,
+	Excalibur,
+	Exodus,
+	Faerie,
+	Famfrit,
+	Fenrir,
+	Garuda,
+	Gilgamesh,
+	Goblin,
+	Gungnir,
+	Hades,
+	Hyperion,
+	Ifrit,
+	Ixion,
+	Jenova,
+	Kujata,
+	Lamia,
+	Leviathan,
+	Lich,
+	Louisoix,
+	Malboro,
+	Mandragora,
+	Masamune,
+	Mateus,
+	Midgardsormr,
+	Moogle,
+	Odin,
+	Omega,
+	Pandaemonium,
+	Phoenix,
+	Ragnarok,
+	Ramuh,
+	Ravana,
+	Ridill,
+	Sargatanas,
+	Sephirot,
+	Shinryu,
+	Shiva,
+	Siren,
+	Sophia,
+	Spriggan,
+	Tiamat,
+	Titan,
+	Tonberry,
+	Twintania,
+	Typhon,
+	Ultima,
+	Ultros,
+	Unicorn,
+	Valefor,
+	Yojimbo,
+	Zalera,
+	Zeromus,
+	Zodiark,
+	Zurvan
+}
