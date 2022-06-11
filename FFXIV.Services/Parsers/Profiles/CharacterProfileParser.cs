@@ -65,6 +65,24 @@ public sealed class CharacterProfileParser : ParserBase, ICharacterProfileParser
 		Dictionary<string, GrandCompany> descriptionToGrandCompanyDictionary = Enum.GetValues<GrandCompany>().ToDictionary(x => x.GetDescription()!, x => x);
 		GrandCompany grandCompany = descriptionToGrandCompanyDictionary[grandCompanyText];
 
+		Dictionary<GrandCompany, string> grandCompanyRankStrings = new Dictionary<GrandCompany, string>()
+		{
+			{ GrandCompany.ImmortalFlames, "Flame " },
+			{ GrandCompany.OrderOfTheTwinAdder, "Serpent " },
+			{ GrandCompany.Maelstrom, "Storm " },
+			{ GrandCompany.NoAffiliation, string.Empty }
+		};
+
+		// if character has not joined grand company
+		if (grandCompany is GrandCompany.NoAffiliation)
+		{
+			return new GrandCompanyInfo(grandCompany, GrandCompanyRank.NotInGrandCompany);
+		}
+
+		// remove grand company specific string from ranks
+		string grandCompanyRankString = grandCompanyRankStrings[grandCompany];
+		rankText = rankText.Replace(grandCompanyRankString, string.Empty);
+
 		Dictionary<string, GrandCompanyRank> descriptionToRankDictionary = Enum.GetValues<GrandCompanyRank>().ToDictionary(x => x.GetDescription()!, x => x);
 		GrandCompanyRank rank = descriptionToRankDictionary[rankText];
 

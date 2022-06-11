@@ -22,10 +22,10 @@ public class LodesStoneProfileParsingTests
 		InvalidHtml.LoadHtml("");
 
 
-		string profileText = File.ReadAllText(@".\lodestone\html\profile.html");
+		string profileText = File.ReadAllText(@"Lodestone/html/profile.html");
 		ProfileHtml.LoadHtml(profileText);
 
-		string invalidRaceClanGenderText = File.ReadAllText(@".\lodestone\html\invalid_race_clan_gender.html");
+		string invalidRaceClanGenderText = File.ReadAllText(@"Lodestone/html/invalid_race_clan_gender.html");
 		InvalidRaceClanGenderHtml.LoadHtml(invalidRaceClanGenderText);
 	}
 
@@ -287,7 +287,7 @@ public class LodesStoneProfileParsingTests
 		grandCompanyInfo.Should().NotBeNull();
 
 		grandCompanyInfo.GrandCompany.Should().Be(GrandCompany.ImmortalFlames);
-		grandCompanyInfo.Rank.Should().Be(GrandCompanyRank.SecondFlameLieutenant);
+		grandCompanyInfo.Rank.Should().Be(GrandCompanyRank.SecondLieutenant);
 	}
 
 
@@ -307,7 +307,7 @@ public class LodesStoneProfileParsingTests
 		profile.NameDay.Should().Be("13th Sun of the 3rd Astral Moon");
 		profile.Server.Should().Be("Twintania (Light)");
 		profile.Race.Should().Be(Race.Roegadyn);
-		profile.GrandCompanyInfo.Should().Be(new GrandCompanyInfo(GrandCompany.ImmortalFlames, GrandCompanyRank.SecondFlameLieutenant));
+		profile.GrandCompanyInfo.Should().Be(new GrandCompanyInfo(GrandCompany.ImmortalFlames, GrandCompanyRank.SecondLieutenant));
 
 	}
 }

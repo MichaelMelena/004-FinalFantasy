@@ -94,7 +94,7 @@ public class IntegrationParseProfileTest
 		string serverName = ProfileParser.ParseServer(Html.DocumentNode);
 
 		// assert
-		serverName.Should().NotBeNullOrWhiteSpace().And.BeEquivalentTo("Twintania (Light)");
+		serverName.Should().NotBeNullOrWhiteSpace().And.BeEquivalentTo("Twintania [Light]");
 	}
 	[TestMethod]
 	public void ParseGrandComapny_Test()
@@ -106,7 +106,7 @@ public class IntegrationParseProfileTest
 		grandCompanyInfo.Should().NotBeNull();
 
 		grandCompanyInfo.GrandCompany.Should().Be(GrandCompany.ImmortalFlames);
-		grandCompanyInfo.Rank.Should().Be(GrandCompanyRank.SecondFlameLieutenant);
+		grandCompanyInfo.Rank.Should().BeOneOf(GrandCompanyRank.FirstLieutenant);
 	}
 
 	[TestMethod]
@@ -123,9 +123,9 @@ public class IntegrationParseProfileTest
 		profile.Gender.Should().Be(Gender.Male);
 		profile.Name.Should().Be("Elseif Machina");
 		profile.NameDay.Should().Be("13th Sun of the 3rd Astral Moon");
-		profile.Server.Should().Be("Twintania (Light)");
+		profile.Server.Should().Be("Twintania [Light]");
 		profile.Race.Should().Be(Race.Roegadyn);
-		profile.GrandCompanyInfo.Should().Be(new GrandCompanyInfo(GrandCompany.ImmortalFlames, GrandCompanyRank.SecondFlameLieutenant));
+		profile.GrandCompanyInfo.Should().Be(new GrandCompanyInfo(GrandCompany.ImmortalFlames, GrandCompanyRank.FirstLieutenant));
 
 	}
 }
