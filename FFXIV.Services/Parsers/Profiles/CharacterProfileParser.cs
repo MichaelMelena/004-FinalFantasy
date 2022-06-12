@@ -13,7 +13,7 @@ public sealed class CharacterProfileParser : ICharacterProfileParser
 
 		string xPath = ".//div[p='City-state']/p[last()]";
 		HtmlNode? node = html?.SelectSingleNode(xPath);
-		HtmlNode cityStateNode = node.ReturnNotNullOrThrow(xPath);
+		HtmlNode cityStateNode = node.EnsureNotNull(xPath);
 
 		string cityStateText = cityStateNode.InnerText;
 		CityState cityState = ParseEnum<CityState>(cityStateText);
@@ -55,7 +55,7 @@ public sealed class CharacterProfileParser : ICharacterProfileParser
 
 		string xPath = ".//div[p='Grand Company']/p[last()]";
 		HtmlNode? node = html?.SelectSingleNode(xPath);
-		HtmlNode grandCompanyInfoNode = node.ReturnNotNullOrThrow(xPath);
+		HtmlNode grandCompanyInfoNode = node.EnsureNotNull(xPath);
 
 		string[] grandCompanyInfoArray = grandCompanyInfoNode.InnerText.Split("/");
 
@@ -95,7 +95,7 @@ public sealed class CharacterProfileParser : ICharacterProfileParser
 
 		string xPath = ".//p[@class='frame__chara__name']";
 		HtmlNode? node = html?.SelectSingleNode(xPath);
-		HtmlNode nameNode = node.ReturnNotNullOrThrow(xPath);
+		HtmlNode nameNode = node.EnsureNotNull(xPath);
 
 		string name = nameNode.InnerText.Trim();
 
@@ -113,7 +113,7 @@ public sealed class CharacterProfileParser : ICharacterProfileParser
 
 		string xPath = ".//p[@class='character-block__birth']";
 		HtmlNode? node = html?.SelectSingleNode(xPath);
-		HtmlNode nameDayNode = node.ReturnNotNullOrThrow(xPath);
+		HtmlNode nameDayNode = node.EnsureNotNull(xPath);
 
 		string nameDay = nameDayNode.InnerText;
 
@@ -168,7 +168,7 @@ public sealed class CharacterProfileParser : ICharacterProfileParser
 		string xPath = ".//p[@class='frame__chara__world']";
 
 		HtmlNode? node = html.SelectSingleNode(xPath);
-		HtmlNode serverNameNode = node.ReturnNotNullOrThrow(xPath);
+		HtmlNode serverNameNode = node.EnsureNotNull(xPath);
 
 		string serverName = serverNameNode.InnerText.Trim().Replace("&nbsp;", " ");
 
@@ -181,7 +181,7 @@ public sealed class CharacterProfileParser : ICharacterProfileParser
 
 		string xPath = ".//p[@class='character-block__name']";
 		HtmlNode? characterBlockNode = html?.SelectSingleNode(xPath);
-		return characterBlockNode.ReturnNotNullOrThrow(xPath);
+		return characterBlockNode.EnsureNotNull(xPath);
 	}
 
 	private string[] GetGenderAndClan(HtmlNode html)

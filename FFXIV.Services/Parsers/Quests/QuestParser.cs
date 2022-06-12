@@ -34,7 +34,7 @@ public class QuestParser : IQuestParser
 		List<Quest> quests = new List<Quest>();
 
 		HtmlNode? node = html.SelectSingleNode(xPathPager);
-		HtmlNode pagerLink = node.ReturnNotNullOrThrow(xPathPager);
+		HtmlNode pagerLink = node.EnsureNotNull(xPathPager);
 
 		string? url = pagerLink.GetAttributeValue<string?>("href", null);
 

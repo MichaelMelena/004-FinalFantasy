@@ -12,7 +12,7 @@ public static class ParserExtenstions
 	/// <param name="xPath">HAP select expression</param>
 	/// <returns></returns>
 	/// <exception cref="ArgumentException">When HTML Node is not found for specified xPath</exception>
-	public static HtmlNode ReturnNotNullOrThrow([MaybeNull] this HtmlNode? htmlNode, [NotNull] string xPath)
+	public static HtmlNode EnsureNotNull([MaybeNull] this HtmlNode? htmlNode, [NotNull] string xPath)
 	{
 		ArgumentNullException.ThrowIfNull(htmlNode);
 		ArgumentNullException.ThrowIfNull(xPath);

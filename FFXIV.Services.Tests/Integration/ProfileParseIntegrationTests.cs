@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using FFXIV.Models.Characters.Profiles;
+﻿using FFXIV.Models.Characters.Profiles;
 using FFXIV.Services.Lodestone.Http;
 using FFXIV.Services.Parsers.Profiles;
 using HtmlAgilityPack;
@@ -8,7 +7,7 @@ using Refit;
 namespace FFXIV.Services.Tests.Integration;
 
 [TestClass]
-public class IntegrationParseProfileTest
+public class ProfileParseIntegrationTests
 {
 	private const string Id = "28632101";
 

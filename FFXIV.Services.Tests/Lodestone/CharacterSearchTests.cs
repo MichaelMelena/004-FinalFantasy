@@ -22,32 +22,6 @@ public class CharacterSearchTests
 	[TestMethod]
 	public async Task SearchCharacterTest()
 	{
-
-		// setup
-
-		string name = "Elseif Machina";
-		CharacterSearchParser parser = new CharacterSearchParser();
-		// act
-
-		ApiResponse<string> response = await _api.Search(name, null, null, null, null);
-
-		HtmlDocument htmlDocument = new HtmlDocument();
-		htmlDocument.LoadHtml(response.Content);
-
-		List<CharacterSearchProfile> profiles = parser.ParseSearchItems(htmlDocument.DocumentNode);
-
-		// assert
-		response.IsSuccessStatusCode.Should().BeTrue();
-
-		response.Content.Should().NotBeNullOrEmpty();
-
-		profiles.Should().NotBeNullOrEmpty();
-
-	}
-
-	[TestMethod]
-	public async Task ParseCharacterSearchTest()
-	{
 		// setup
 
 		string name = "Elseif Machina";
@@ -60,7 +34,11 @@ public class CharacterSearchTests
 		response.IsSuccessStatusCode.Should().BeTrue();
 
 		response.Content.Should().NotBeNullOrEmpty();
+
 	}
+
+
+	
 
 	[TestMethod]
 	public async Task GetCharacterTest()
@@ -72,6 +50,6 @@ public class CharacterSearchTests
 
 
 
-	
+
 
 }
