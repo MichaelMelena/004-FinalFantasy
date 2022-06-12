@@ -6,7 +6,6 @@ namespace FFXIV.Services.Parsers.CharacterSearch;
 
 public sealed class CharacterSearchParser
 {
-
 	private string ParseName(HtmlNode entryNode)
 	{
 		HtmlNode characterNameNode = entryNode.SelectSingleNode("//p[@class=\"entry__name\"]");
@@ -23,8 +22,8 @@ public sealed class CharacterSearchParser
 		string worldString = parts[0].Trim();
 		string dataCenterString = parts[1].Substring(0, parts[1].Length - 1);
 
-		HomeWorld homeWorld = Enum.Parse<HomeWorld>(worldString);
-		DataCenter dataCenter = Enum.Parse<DataCenter>(dataCenterString);
+		HomeWorld homeWorld = Enum.Parse<HomeWorld>(worldString, true);
+		DataCenter dataCenter = Enum.Parse<DataCenter>(dataCenterString, true);
 
 		return new Server
 		{
@@ -36,18 +35,24 @@ public sealed class CharacterSearchParser
 
 	private Language ParseLanuage(HtmlNode entryNode)
 	{
-		HtmlNode languageNode = entryNode.SelectSingleNode("p[@class=\"entry__chara__lang\"]");
-		throw new NotImplementedException();
+		HtmlNode languageNode = entryNode.SelectSingleNode("//div[@class=\"entry__chara__lang\"]");
+		string languageString = languageNode.InnerText;
+		Language language = Enum.Parse<Language>(languageString, true);
+		return language;
 	}
 
 	private Uri ParsePortraitUri(HtmlNode entryNode)
 	{
-		throw new NotImplementedException();
+		HtmlNode characterPortraiNode = entryNode.SelectSingleNode("//div[@class=\"entry__chara__face\"]/img");
+		string portraitLink = characterPortraiNode.GetAttributeValue("src", null);
+		return new Uri(portraitLink);
 	}
 
 	private Uri ParseCharacterLink(HtmlNode entryNode)
 	{
-		throw new NotImplementedException();
+		HtmlNode characterLinkNode = entryNode.SelectSingleNode("//a[@class=\"entry__link\"]");
+		string characterLink = characterLinkNode.GetAttributeValue("href", null);
+		return new Uri(characterLink);
 	}
 
 	public CharacterSearchProfile ParseSearchItem(HtmlNode entryNode)
@@ -55,12 +60,16 @@ public sealed class CharacterSearchParser
 		string characterName = ParseName(entryNode);
 		Server server = ParseServer(entryNode);
 		Language language = ParseLanuage(entryNode);
-		HtmlNode characterLinkNode = entryNode.SelectSingleNode("a[@class=\"entry__link\"]");
+		Uri characterLink = ParseCharacterLink(entryNode);
+		Uri characterPortraitUri = ParsePortraitUri(entryNode);
 
 		return new CharacterSearchProfile
 		{
 			Name = characterName,
-			Server = server
+			Server = server,
+			Language = language,
+			CharacterUri = characterLink,
+			PortraitUri = characterPortraitUri
 		};
 	}
 

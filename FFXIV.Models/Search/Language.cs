@@ -1,15 +1,9 @@
-﻿using System.ComponentModel;
-
-namespace FFXIV.Models.Search;
+﻿namespace FFXIV.Models.Search;
 
 public enum Language
 {
-	[Description("ja")]
-	Japanese = 0,
-	[Description("en")]
-	English = 1,
-	[Description("de")]
-	German = 2,
-	[Description("fr")]
-	French = 3
+	JA = 0,
+	EN = 1,
+	DE = 2,
+	FR = 3
 }
