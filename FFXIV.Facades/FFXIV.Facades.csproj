@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Search\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Search\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FFXIV.Services\FFXIV.Services.csproj" />
+    <ProjectReference Include="..\FFXIV.Models\FFXIV.Models.csproj" />
+  </ItemGroup>
 </Project>

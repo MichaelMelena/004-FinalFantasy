@@ -21,6 +21,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\FFXIV.Services\FFXIV.Services.csproj" />
+		<ProjectReference Include="..\FFXIV.Facades\FFXIV.Facades.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
