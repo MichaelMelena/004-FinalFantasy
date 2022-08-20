@@ -3,7 +3,7 @@ using HtmlAgilityPack;
 
 namespace FFXIV.Services.Parsers.Profiles;
 
-public interface ICharacterProfileParser
+public interface ICharacterProfileParser: IParser<CharacterProfile>
 {
 	string ParseName(HtmlNode html);
 
@@ -13,7 +13,7 @@ public interface ICharacterProfileParser
 
 	GrandCompanyInfo ParseGrandComapny(HtmlNode html);
 
-	Profile ParseProfile(HtmlNode html);
+	CharacterProfile ParseProfile(HtmlNode html);
 
 	string ParseServer(HtmlNode html);
 

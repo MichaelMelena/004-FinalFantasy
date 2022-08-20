@@ -295,7 +295,7 @@ public class LodesStoneProfileParsingTests
 	public void ParseProfile_Test()
 	{
 		// act
-		Profile profile = ProfileParser.ParseProfile(ProfileHtml.DocumentNode);
+		CharacterProfile profile = ProfileParser.ParseProfile(ProfileHtml.DocumentNode);
 
 		// assert
 		profile.Should().NotBeNull();

@@ -7,6 +7,11 @@ namespace FFXIV.Services.Parsers.Profiles;
 
 public sealed class CharacterProfileParser : ICharacterProfileParser
 {
+	public CharacterProfile Parse(HtmlNode htmlNode)
+	{
+		return ParseProfile(htmlNode);
+	}
+
 	public CityState ParseCityState(HtmlNode html)
 	{
 		ArgumentNullException.ThrowIfNull(html);
@@ -120,7 +125,7 @@ public sealed class CharacterProfileParser : ICharacterProfileParser
 		return nameDay;
 	}
 
-	public Profile ParseProfile(HtmlNode html)
+	public CharacterProfile ParseProfile(HtmlNode html)
 	{
 		ArgumentNullException.ThrowIfNull(html);
 
@@ -136,7 +141,7 @@ public sealed class CharacterProfileParser : ICharacterProfileParser
 		CityState cityState = ParseCityState(html);
 		GrandCompanyInfo grandCompanyInfo = ParseGrandComapny(html);
 
-		Profile profile = new Profile
+		CharacterProfile profile = new CharacterProfile
 		{
 			Name = name,
 			CityState = cityState,

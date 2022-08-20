@@ -1,9 +1,8 @@
-﻿using System;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 
 namespace FFXIV.Models.Characters.Profiles;
 
-public record class Profile
+public record class CharacterProfile
 {
 	private string? _name = "your name";
 	[NotNull]

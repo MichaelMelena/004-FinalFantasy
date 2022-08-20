@@ -112,7 +112,7 @@ public class ProfileParseIntegrationTests
 	public void ParseProfile_Test()
 	{
 		// act
-		Profile profile = ProfileParser.ParseProfile(Html.DocumentNode);
+		CharacterProfile profile = ProfileParser.ParseProfile(Html.DocumentNode);
 
 		// assert
 		profile.Should().NotBeNull();

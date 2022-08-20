@@ -7,6 +7,7 @@
 
 	<ItemGroup>
 		<Folder Include="Resolvers\" />
+		<Folder Include="CharacterProfiles\" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -35,4 +36,7 @@
 	  </EmbeddedResource>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="CharacterProfiles\" />
+	</ItemGroup>
 </Project>
