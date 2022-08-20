@@ -9,7 +9,7 @@ namespace FFXIV.Services.Tests.Integration;
 [TestClass]
 public class ProfileParseIntegrationTests
 {
-	private const string Id = "28632101";
+	private const int Id = 28632101;
 
 	private static ILodestoneCharacterProfileApi? _api;
 

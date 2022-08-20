@@ -43,7 +43,7 @@ public class CharacterSearchTests
 	[TestMethod]
 	public async Task GetCharacterTest()
 	{
-		string id = "28632101";
+		int id = 28632101;
 		ApiResponse<string> response = await _api.GetCharacterAsync(id);
 		response.Content.Should().NotBeNullOrWhiteSpace();
 	}
